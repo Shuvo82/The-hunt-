@@ -1,0 +1,108 @@
+.feature{
+    background-color: #f2f7fb;
+    // margin: 5rem 0;
+    &__heading {
+        text-align: center;
+         h3 {
+        font-size: 35px;
+        margin: 0;
+    }
+
+     p {
+        font-size: 14px;
+        color: $grey;
+    }
+}
+&__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    .card {
+    position: relative;
+    background-color: $white;
+    flex-basis: 31%;  
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    // box-shadow
+    @include breakpoint-down(medium){
+        flex-basis: 45%;
+    }
+    @include breakpoint-down(small){
+        flex-basis: 100%;
+        margin: 2rem 5rem;
+    }
+    &:hover::before{
+        content: '';
+        position: absolute;
+        background-color: $green;
+        top: 0;
+        left: -3px;
+        width: 8px;
+        height: 100%;
+        border-radius: 40px;
+
+    }
+    .card-content {
+            display: flex;
+        }  
+        &__image {
+            margin: 1rem 2rem;
+        }
+        
+        .card__text-heading{
+         h4 {
+            margin: 0;
+            font-size: 20px;
+        }  
+        p {
+            margin: 0.175rem;
+            font-size: 14px;
+        }
+        }
+
+        
+        .card__text-info1 {
+            display: flex; 
+          p {
+            margin-right: 0.875rem;
+            font-size: 15px;
+        }
+        }
+        .card__text-btn {
+            font-size: 14px;
+            margin: 0;
+            text-align: center;
+            width: 6rem;
+            border-radius: 10px;
+        }
+        .g{
+            background-color: #D7FFE8;
+            color: #35AE7A;
+        }
+        .r{
+        background-color: #FDD7D3; 
+        color: #FB6159;
+        }
+        
+
+}
+
+    
+
+}
+&__btn{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-block: 1rem;
+    margin-top: 1rem;
+}
+
+
+}
+

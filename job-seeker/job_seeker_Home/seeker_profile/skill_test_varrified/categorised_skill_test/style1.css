@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    min-height: 20px;
+    background-color: rgb(242, 247, 251);
+}
+
+.section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1234;
+    background-color: rgba(48, 143, 207, 0.329);
+}
+.header_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+.navbar>ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.navbar>ul>li{
+    position: relative;
+}
+.navbar>ul>li>a{
+    padding: 15px 10px;
+    font-size: 17px;
+    color: rgb(58, 59, 59);
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar>ul>li a i{
+    margin-left: 5px;
+}
+
+/*?===========Drop down menu===========*/
+
+
+.navbar>ul>li>ul{
+    min-width: 140px;
+    position: absolute;
+    top: calc(100% + 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.navbar>ul>li>ul>li{
+    padding: 10px 15px;
+}
+.navbar>ul>li>ul>li>a{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar>ul>li a:hover{
+    color: rgb(38, 174, 97);
+}
+.drop_down:hover +ul{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+.navbar>ul>li .drop:hover{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+
+/*!======Drop down end=========  */
+
+/*! ==============Header End============= */
+
+.mcq{
+    margin-top: 100px;
+}
+
+.mcq-question{
+    width: 52%;
+    margin: 0 auto;
+}
+h1{
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+}
+input[type="radio"]{
+    padding-right: 15px;
+}
+
+
+p{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+/*
+.HTML{
+    padding-right: 300px;
+    padding-bottom: 200px;
+}
+*/
+

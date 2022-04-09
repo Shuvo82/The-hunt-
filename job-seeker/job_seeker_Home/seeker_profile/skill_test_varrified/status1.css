@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(57,66,78);
+    margin-bottom: 100px;
+}
+
+.section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1234;
+    background-color: rgb(57,66,78);
+}
+.header_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 200px;
+}
+.navbar>ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 200px;
+}
+.navbar>ul>li{
+    position: relative;
+    
+}
+.navbar>ul>li>a{
+    padding: 15px 10px;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar>ul>li a i{
+    margin-left: 5px;
+}
+
+/*?===========Drop down menu===========*/
+
+
+.navbar>ul>li>ul{
+    min-width: 140px;
+    position: absolute;
+    top: calc(100% + 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.navbar>ul>li>ul>li{
+    padding: 10px 15px;
+}
+.navbar>ul>li>ul>li>a{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar>ul>li a:hover{
+    color: rgb(38, 174, 97);
+}
+.drop_down:hover +ul{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+.navbar>ul>li .drop:hover{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+
+/*!======Drop down end=========  */
+
+/*! ==============Header End============= */
+
+/* header_section */
+.header_container_skill{
+    width: 100%;
+    box-shadow: 2px 2px 2px rgb(238, 236, 236);
+    margin-bottom: 3px;
+}
+.header_section h1{
+    margin-left: 210px;
+}
+.header_section p{
+    margin-left: 210px;
+}
+.header_section h1{
+    padding-bottom: 20px;
+}
+.section_one{
+    background-color: rgb(249, 251, 251);
+    
+}
+.sec_one_container{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.section_one .sec_one_container .half_width{
+    width: 50%;
+    /* border: 1px solid; */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.section_one .sec_one_container .half_width .secOne_heading{
+    margin-top: 50px;
+}
+.section_one .sec_one_container .half_width p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section_one .sec_one_container .half_width a{
+    padding: 10px;
+    background-color: rgb(27, 169, 76);
+    color: white;
+    text-decoration: none;
+    /* margin-top: 20px; */
+}
+.section_one .sec_one_container .half_width img{
+    margin-left: 200px;
+}
+.section_two{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.sec_two_container{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+}
+.sec_two_container .second_half_width{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.sec_two_container .second_half_width h1.skill{
+    margin-top: 130px;
+}
+
+.second_half_width .skill_company{
+    margin-left: 100px;
+}
+.skill_company{
+    display: flex;
+}
+.skill_company .logo img{
+    width: 90px;
+}
+.companies{
+    margin-top: 100px;
+}
+.skill_company{
+    
+}
+.skill_company .prove_text h1{
+    margin-left: 20px;
+}
+.skill_company .prove_text p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.skill_company .companies_txt h1{
+    margin-left: 20px;
+}
+.skill_company .companies_txt p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.section_three{
+    margin-bottom: 50px;
+}
+.section_four {
+    margin-bottom: 0px;
+    background-color: rgb(243, 247, 247);
+}
+
+/* countdown */
+.header_section{
+    display: flex;
+}
+.timer-section .countdown{
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #007991, #78ffd6);
+    background: linear-gradient(to right, #11998E, #38EF7D);
+    padding: 10px 10px;
+    position: relative;
+    left: 75%;
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    top: -5px;
+}
+.timer-section .countdown a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0%;
+    font-size: 40px;
+    word-spacing: 20px;
+}
+.attempt{
+    /* position: relative;
+    width: 100%;
+    margin-left: 90%; */
+    /* display: flex; */
+    margin-left: 32%;
+    position: relative;
+    top: -22px;
+}
+.attempt a{
+    padding: 10px 50px;
+    background-color: rgb(27, 169, 76);
+    color: white;
+    text-decoration: none;
+}

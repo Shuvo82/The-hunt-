@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    /* background-image: linear-gradient(to right, #75e9bc , #c8f6fa); */
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(242, 247, 251);
+}
+
+.section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1234;
+    background-color: rgb(242, 247, 251);
+}
+.header_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 10px 28px 10px;
+    
+}
+.navbar .logo a img{
+    position: absolute;
+    left: 100px;
+    top: 18px;
+}
+.navbar>ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.navbar>ul>li>a{
+    padding: 20px 15px;
+    color: rgb(58, 59, 59);
+    transition: 0.5s;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar>ul>li a:hover{
+    color: rgb(38, 174, 97);
+}
+.navbar ul :nth-child(0) a{
+    color: rgb(38, 174, 97);
+}
+.navbar>a{ 
+    position: absolute;
+    top: 28px;
+    right: 400px;
+    color: aliceblue;
+    background-color: rgb(38, 174, 97);
+    border-radius: 15px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+
+
+/*!======End nav bar......  */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.input_field{
+    width: 40%;
+    margin-bottom: 50px;
+}
+.input_field label{
+    font-size: 22px;
+}
+.input_field input{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    padding: 11px;
+    background-color: rgb(38, 174, 97);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+/* #title{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+} */
+.tag{
+    position: absolute;
+    margin-top: 1px;
+    padding: 5px;
+}
+.category, .job_type{
+    margin-top: 1px;
+    padding: 5px;
+}

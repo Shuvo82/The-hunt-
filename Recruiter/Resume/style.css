@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Open+Sans:wght@300&family=Playfair+Display:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 212, 212);
+    
+}
+.left{
+    background-color: rgb(48, 57, 72);
+}
+.line{
+    margin-left: 28%;
+    width: 110px;
+}
+hr.line{
+    height: 2px;
+    color: aliceblue;
+    margin-bottom: 40px;
+}
+p{
+    color: white;
+}
+.alignment{
+    margin-left: 28%;
+}
+h4.cnt,.edu,.ref{
+    margin-left: 28%;
+}
+.social_info{
+    margin-left: 28%;
+}
+.cnt{
+    margin-bottom: 10px;
+}
+.master .edu_info_first,.edu_info_second p{
+    line-height: 10px;
+    font-size: 14px;
+}
+.location,.telephone,.email{
+    line-height: 28px;
+    font-size: 15px;
+}
+.edu_info_second{
+    margin-top: 40px;
+}
+.references .references_first,.references_second{
+    line-height: 10px;
+    font-size: 14px;
+}
+.references_second{
+    margin-top: 40px;
+}
+.contact,.education,.references{
+    margin-top: 80px;
+}
+.heading{
+    background-color: rgb(245, 245, 245);
+    margin-left: 20px;
+}
+
+hr.profile_hr{
+    width: 120px;
+    height: 2px;
+    color: gray;
+}
+
+.profile_txt{
+    color: rgb(12, 7, 7);
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+.profile_section{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+hr.exp_hr{
+    width: 40%;
+    height: 2px;
+}
+.job_pos{
+    color: black;
+    font-weight: 700;
+}
+.pos_place{
+    color: gray;
+}
+.work_duration i{
+    color: gray;
+    margin-left: auto;
+}
+.pos_place{
+    display: flex;
+    align-items: center;
+}
+.pos_txt{
+    color: gray;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.pos_txt p{
+    text-align: justify;
+}
+.skills{
+    
+}
+hr.skills_hr{
+    width: 15%;
+    height: 2px;
+}
+.all_skills{
+    display: flex;
+    
+}
+.second_half{
+    margin-left: 30%;
+}
+hr.name_hr{
+    width: 20%;
+    margin-left: 38%;
+    height: 3px;
+}

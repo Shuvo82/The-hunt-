@@ -1,0 +1,47 @@
+.companies{
+    
+    &__heading {
+        margin-top: 3rem;
+        text-align: center;
+    h3 {
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 13px;
+        color: $grey;
+    }
+}
+.company__details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    @include breakpoint-down(small){
+        flex-direction: column;
+       
+    }
+}
+
+.comapny {
+    margin-inline: 2rem;
+    text-align: center;
+    @include breakpoint-down(small){
+        margin-block: 2rem;
+    }
+}
+
+.company__content-info {
+    display: flex;
+}
+
+.company__content h4 {
+    margin: 0;
+}
+
+.company__content-info p {
+    margin-right: 1rem;
+    font-size: 13px;
+}
+}

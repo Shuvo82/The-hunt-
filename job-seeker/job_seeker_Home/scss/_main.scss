@@ -1,0 +1,72 @@
+section.main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include breakpoint-down(medium){
+        flex-direction: column;
+    }
+}
+
+.recruiter {
+    background: #35AE66;
+    padding: 7rem;
+    h3 {
+        font-size: 42px;
+        width: 16rem;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    p {
+
+        color: #fff;
+    }
+
+    &-btn {
+        background: #fff;
+        border: none;
+        color: #35AE66;
+        padding: .5rem 1rem;
+        font-size: 18px;
+        margin-top: 2rem;
+        border-radius: 20px;
+        &:hover{
+            background-color: #35AE66;
+            color: $white;
+            border: 1px solid $white;
+        }
+    }
+}
+
+
+
+.jobseeker {
+    background: #253249;
+    padding: 7rem; 
+h3 {
+    font-size: 42px;
+    width: 16rem;
+    margin: 0 auto;
+    color: #fff;
+}
+ p {
+
+    color: #fff;
+}
+
+&-btn {
+    background: #fff;
+    border: none;
+    color: #253249;
+    padding: .5rem 1rem;
+    font-size: 18px;
+    margin-top: 2rem;
+    border-radius: 20px;
+    &:hover{
+        background-color: #253249;
+        color: $white;
+        border: 1px solid $white;
+    }
+}
+}
+

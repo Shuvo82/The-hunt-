@@ -1,0 +1,117 @@
+.price{
+    &__heading {
+        margin-top: 3rem;
+        text-align: center;
+    h3 {
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 13px;
+        color: $grey;
+    }
+    }
+    .price__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        margin: 5rem 10rem;
+        @include breakpoint-down(medium){
+            margin: 5rem 3rem;
+        }
+        @include breakpoint-down(small){
+            flex-direction: column;
+
+         
+        }
+    }
+    
+.single__price {
+        position: relative;
+        flex-basis: 30%;
+        text-align: center;
+        overflow: hidden;
+        margin-inline: 4rem;
+        @include breakpoint-down(small){
+            margin-block: 2rem;
+        }
+      i {
+        font-size: 50px;
+        color: #35ae66;
+        margin-top: 2rem;
+    } 
+    .advance::before{
+        content: '';
+        position: absolute;
+        background-color: #FB5C4D;
+        width: 100%;
+        height: 8px;
+        top: -3px;
+        left: 0;
+        border-radius: 20px;
+
+    }
+    .professional::before{
+        content: '';
+        position: absolute;
+        background-color: #35AE66;
+        width: 100%;
+        height: 8px;
+        top: -3px;
+        left: 0;
+        border-radius: 20px;
+
+    }
+    .premium::before{
+        content: '';
+        position: absolute;
+        background-color: #4770FA;
+        width: 100%;
+        height: 8px;
+        top: -3px;
+        left: 0;
+        border-radius: 20px;
+
+    }
+
+ }
+    
+
+    
+.price__info{
+    h3 {
+        font-size: 20px;
+     }
+     h4{
+         font-size: 15px;
+         color: $grey;
+     }
+    
+    p {
+        font-size: 14px;
+        color: $grey;
+    }
+    span{
+        font-size: 30px;
+    }
+}
+    
+    .price-btn {
+        border: 2px solid #35AE66;
+        color: #35AE66;
+        border-radius: 31px;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #35AE66;
+            color: $white;
+        }
+    }
+    .adv-btn {
+        padding: 1rem 2rem;
+    }
+
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+		<div class="section">
+			<div class="header_container">
+				<nav class="navbar">
+					<h2 class="logo">
+						<a href="#">
+							<img src="../../images/logo.png" alt="">
+						</a>
+					</h2>
+					<ul>
+						<li><a href="../../index.php">Home</a></li>
+						<li><a href="../job_seeker_login/index.html">Job seeker</a></li>
+						<li><a href="../job_seeker_login/index.html">login</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+<!-- End Header -->
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/job_hunt.svg">
+		</div>
+		<div class="wrapper">
+      <div class="title">
+        Registration Form
+      </div>
+      <form class="form" action="registration_process.php" method="POST">
+        
+          <div class="inputfield">
+             <label>First Name</label>
+             <input type="text" class="input" name="first_name">
+          </div>  
+           <div class="inputfield">
+             <label>Last Name</label>
+             <input type="text" class="input" name="last_name">
+          </div>  
+          <div class="inputfield">
+           <label>User Name</label>
+           <input type="text" class="input" name="user_name">
+        </div>
+          <div class="inputfield">
+             <label>Password</label>
+             <input type="password" class="input" name="password">
+          </div>   
+           <div class="inputfield">
+             <label>Gender</label>
+             <div class="custom_select">
+               <select name="gender">
+                 <option value="">Select</option>
+                 <option value="male">Male</option>
+                 <option value="female">Female</option>
+               </select>
+             </div>
+          </div> 
+           <div class="inputfield">
+             <label>Email Address</label>
+             <input type="text" class="input" name="email">
+          </div> 
+         <div class="inputfield">
+             <label>Contact</label>
+             <input type="text" class="input" name="contact">
+          </div> 
+         <div class="inputfield">
+             <label>Address</label>
+             <textarea class="textarea" name="address"></textarea>
+          </div> 
+         <div class="inputfield">
+             <label>Postal Code</label>
+             <input type="text" class="input" name="postal_code">
+          </div> 
+         <div class="inputfield terms">
+             <label class="check">
+               <input type="checkbox">
+               <span class="checkmark"></span>
+             </label>
+             <p>Agreed to terms and conditions</p>
+          </div> 
+         <div class="inputfield">
+           <input type="submit" value="Register" class="btn">
+         </div>
+      </form>
+      <div class="login">
+        <a href="../job_seeker_login/index.html">Already I have an account</a>
+      </div>
+  </div>
+    </div>
+</body>
+</html>

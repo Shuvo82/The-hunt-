@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(57,66,78);
+    margin-bottom: 90px;
+}
+
+.section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1234;
+    background-color: rgb(57,66,78);
+}
+.header_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 200px;
+}
+.navbar>ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 200px;
+}
+.navbar>ul>li{
+    position: relative;
+    
+}
+.navbar>ul>li>a{
+    padding: 15px 10px;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar>ul>li a i{
+    margin-left: 5px;
+}
+
+/*?===========Drop down menu===========*/
+
+
+.navbar>ul>li>ul{
+    min-width: 140px;
+    position: absolute;
+    top: calc(100% + 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.navbar>ul>li>ul>li{
+    padding: 10px 15px;
+}
+.navbar>ul>li>ul>li>a{
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar>ul>li a:hover{
+    color: rgb(38, 174, 97);
+}
+.drop_down:hover +ul{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+.navbar>ul>li .drop:hover{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 10px);
+}
+
+/*!======Drop down end=========  */
+
+/*! ==============Header End============= */
+.main_section{
+    background: rgb(239,239,241);
+    margin-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    box-shadow: 2px 3px 5px gray;
+}
+.main_section .main{
+    
+    display: flex;
+    margin-bottom: 50px;
+    
+    /* border: 1px solid green; */
+}
+/* .h{
+    margin-top: 10px;
+} */
+/* .main_section .main .left{
+    width: 5%;
+    border: 1px solid red;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px white;
+} */
+
+.main_section .main .right{
+    width: 80%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    background-color: rgb(248, 248, 250);
+    margin-top: 40px;
+    
+}
+.result{
+    margin-left: 50px;
+    margin-top: 20px;
+    color: rgb(248, 142, 12);
+}
+.user_info .info{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 40px;
+    width: 25%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.user_info .info .name{
+    background-color:rgb(211, 0, 96);
+    color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+}
+.user_info .info .email{
+    background-color:rgb(87, 160, 20);
+    color: #fff;
+    padding: 10px;
+    border-radius: 2px;
+}
+.border{
+    border: 1px solid rgb(139, 133, 133);
+    box-shadow: 1px 1px 1px gray;
+}
+/*question section*/
+.feedback h1{
+    text-align: center;
+    color: rgb(134, 169, 233);
+}
+.question_info_sec{
+    width: 100%;
+}
+.q_section{
+    width: 81%;
+    margin: 0 auto;
+}
+.ques_area{
+    /* width: 81%;
+    margin: 0 auto; */
+    margin-bottom: 100px;
+    /* border: 1px solid red; */
+}
+.ques{
+    background-color: #fff;
+    margin: 18px;   
+}
+.h_ques{
+    background-color: rgb(73, 190, 126);
+    margin: 15px;
+}
+.ques ul{
+    display: flex;
+    padding: 25px;
+}
+.ques .h_serial{
+    margin-left:10px ;
+}
+.h_ques_serial{
+    margin-left: 5%;
+}
+.h_ans{
+    margin-left: 20%;
+}
+.h_c_ans{
+    margin-left: 26%;
+}
+.h_mark{
+    margin-left: 20%;
+}
+
+.ques .serial{
+    margin-left:10px ;
+}
+.ques_serial{
+    margin-left: 5%;
+}
+.ans{
+    margin-left: 13%;
+    text-align: center;
+}
+.c_ans{
+    margin-left: 19%;
+}
+.mark{
+    margin-left: 20%;
+}
+.suggetion-feedback{
+    display: flex;
+    margin-left: 150px;
+}
+.suggestion{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.suggestion p{
+    text-align: justify;
+    width: 74%;
+    margin-top: 30px;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.happy_btn a{
+    text-decoration: none;
+    padding: 15px 60px;
+    background-color: rgb(27, 169, 76);
+    color: #fff;
+    border-radius: 3px;
+}
+.extra{
+    visibility: hidden;
+}
+.total_marks {
+    margin-left: 36%;
+    font-weight: bold;
+    font-size: 30;
+}
+.space{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 30;
+}
+.pass{
+    margin-left: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 30;
+}
+.fail{
+    margin-left: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 25;
+}

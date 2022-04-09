@@ -1,0 +1,40 @@
+.blog{
+    &__heading {
+        margin-top: 3rem;
+        text-align: center;
+    h3 {
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 13px;
+        color: $grey;
+    }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+    
+    &__card {
+        margin: 3rem 0rem;
+        flex-basis: 25%;
+        @include breakpoint-down(medium){
+            flex-basis: 40%;
+            margin-inline: 1rem;
+        }
+        p{
+            font-size: 14px;
+            color: $grey;
+        }
+        a{
+            text-decoration: none;
+            color: $green;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.info{
+    &__heading {
+        text-align: center;
+    h2 {
+        font-size: 36px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: 13px;
+        color: $grey;
+        width: 26rem;
+        margin: 0 auto;
+    }
+}
+    &__content {
+        display: flex;
+        padding: 2rem;
+        margin: 2rem 7rem;
+        @include breakpoint-down(medium){
+            margin: 2rem 5rem;
+        }
+        @include breakpoint-down(small){
+            margin: 2rem;
+        }
+    .single-info {
+        text-align: center;
+    }
+
+    .info-icon {
+        font-size: 40px;
+        margin-bottom: 1rem;
+        @include breakpoint-down(small){
+            font-size: 24px;
+        }
+    }
+
+    .single-info h4 {
+        font-size: 22px;
+        margin: 0;
+        @include breakpoint-down(small){
+            font-size: 18px;
+        }
+    }
+
+    .single-info p {
+        font-size: 13px;
+        padding: 0rem 3rem;
+        @include breakpoint-down(small){
+            font-size: 10px;
+        }
+    }
+}
+
+
+}
