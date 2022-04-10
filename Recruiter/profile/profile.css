@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(242, 247, 251);
+}
+
+.section{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1234;
+    background-color: rgb(242, 247, 251);
+}
+.header_container{
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 10px 28px 10px;
+    
+}
+.navbar .logo a img{
+    position: absolute;
+    left: 100px;
+    top: 18px;
+}
+.navbar>ul{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+.navbar>ul>li>a{
+    padding: 20px 15px;
+    font-size: 16px;
+    color: rgb(58, 59, 59);
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar>ul>li a:hover{
+    color: rgb(103, 71, 249);
+}
+.navbar ul :nth-child(2) a{
+    color: rgb(103, 71, 249);
+}
+.navbar>a{ 
+    position: absolute;
+    top: 25px;
+    right: 450px;
+    color: aliceblue;
+    background-color: rgb(103, 71, 249);
+    border-radius: 15px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+/*!======End nav bar......  */
+
+.wrapper{
+    margin-top: 80px;
+    width: 100%;
+}
+.wrapper .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    margin-left:17% ;
+}
+.wrapper .container .left_side-bar{
+    width: 18%;
+    box-shadow: 0px 0px 3px 3px rgb(231, 231, 231);
+    border-radius: 5px;
+}
+    
+.wrapper .container .left_side-bar .info_icon i{
+    margin-left: 90%;
+    margin-top: 10px;
+    background-color: rgb(99, 99, 99);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left_side-bar .profile_img img{
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+}
+.left_side-bar .profile_img{
+    /* border-bottom: 1px solid rgb(196, 194, 194); */
+    padding: 10px;
+}
+.profile_info{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: rgb(255, 68, 142);
+    border-radius: 5px;
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.profile_info i{
+    font-size: 29px;
+    margin-left: 15px;
+    color: white;
+}
+.left_side-bar .profile_info p{
+    color: white;
+    margin-left: 25px;
+    font-weight: 700;
+}
+.info_link{
+    display: flex;
+    padding: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+.info_link i{
+    color: rgb(56, 55, 55);
+    font-size: 20px;
+}
+.info_link p{
+    margin-left: 15px;
+    color: rgb(56, 55, 55);
+    font-weight: 700;
+}
+/* left side bar End */
+
+.right_side-bar{
+    margin-left: 40px;
+    box-shadow: 0px 0px 3px 3px rgb(231, 231, 231);
+    border-radius: 5px;
+    width: 60%;
+}
+.nab_var{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.nab_var .heading{
+    padding: 15px;
+}
+.nab_var .heading h2{
+    font-weight: 700;
+}
+.nab_var .edit{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nab_var .edit i{
+    color: rgb(255, 109, 157);
+    
+}
+.nab_var .edit p{
+    margin-right: 20px;
+    padding: 5px;
+    color: rgb(255, 109, 157);
+    font-weight: 600;
+    cursor: pointer;
+}
+.profile_sec{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.main_profile-img{
+    position: relative;
+}
+.main_profile-img img{
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+}
+.main_profile-img button.edit_profile{
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(255, 68, 142);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main_profile-info{
+    margin-left: 40px;
+    padding: 10px;
+}
+.main_profile-info .info{
+    padding: 10px;
+}
+
+
+
+.applied_job{
+    margin-top: 120px;
+    margin-left: 40px;
+}
+.applied_job .heading h1{
+    text-align: center;
+    margin-bottom:20px;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+}
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(103, 71, 249);
+    color: white;
+    text-align: center;
+}
+#customers td a{
+    text-decoration: none;
+    background-color: rgb(255, 68, 142);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
